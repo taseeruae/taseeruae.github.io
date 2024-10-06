@@ -2,12 +2,21 @@
 <html lang="en">
 
 <head>
+<!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XMGZ9R7');</script>
+  <!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 
   <title>Ta'seer, Connecting Brands & Influencers</title>
 
@@ -22,12 +31,9 @@
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  
   <style>
-    .timer {
-      font-size: 48px;
-      font-weight: bold;
-      text-align: center;
-    }
+    
 
     .waitlist-heading {
       text-align: center;
@@ -49,11 +55,196 @@
     .joinwbutton {
       background-color: blueviolet;
       border-radius: 1rem;
+      
     }
+
+    .subbutton{
+      background-color:#f9ebfe;
+      width:100%;
+      border-radius: 2rem;
+      padding:13px;
+      border: rgb(250, 247, 249);
+      appearance:none
+      
+
+    }
+
+    #subject{
+      color:#343334;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+   
+
+    .timer {
+      display: flex;
+      flex-direction: column;  
+      justify-content: center; 
+      align-items: center;     
+      text-align: center;     
+      height: 100%;            
+      
+  }
+  
+  #timer {
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      gap: 1rem;  
+      margin-top:4rem;             
+  }
+  
+  #timer div {
+      display: flex;
+      flex-direction: column;  
+  }
+  
+  #timer p {
+      font-size: 3rem;
+      font-weight: bold;
+      color:  rgba(137, 43, 226, 0.751);
+  }
+  
+  #timer .label {
+      position: relative;
+      top:10px;
+      font-size: 1rem;
+      color: rgb(132, 0, 255);
+      font-weight: 500;
+      
+  }
+
+  .colon{
+    font-size:2rem;
+    font-weight: bold;
+    color: rgb(132, 0, 255);
+    position:relative;
+    top:-15px;
+    
+  }
+
+  .calendly,.calendly a{
+    background-color:rgba(106, 0, 255, 0.893);
+    border:rgba(106, 0, 255, 0.893);
+    border-radius:8px;
+    padding:0.5rem;
+    color:white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out
+  }
+
+  .calendly:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+  .footcontainer{
+    
+    background: linear-gradient(to right, #6700ff, #ff00ff) ;
+    padding: 2rem;
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    
+    color:white;
+
+}
+  
+  
+
+  .Legals p,.footcontainer a{
+    margin-left:1rem;
+    
+    color: white;
+
+  }
+
+  .img{
+    height:50px;
+  }
+
+  .calendly2{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    margin-left:-20px;
+    background-color: white;
+    border: none;
+    color:#7100ae;
+    font-weight:600;
+    border-radius: 1rem;
+    padding:10px;
+
+  }
+
+  .socialicons ul{
+    display:flex;
+    font-size: 2rem;
+    
+  }
+
+  .socialicons{
+    margin-top: 20px;
+    
+    
+  }
+
+  .socialicons li{
+    transition:0.3s ease-in-out;
+    opacity:0.85
+
+  }
+
+  .socialicons li:hover{
+    transform:scale(1.2);
+    opacity: 1;
+
+  }
+
+  .Qlinks li{
+    font-weight: 500;
+    margin-top:10px;
+    font-size:1rem;
+
+  }
+
+  @media (max-width: 768px) {
+    .footcontainer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .Legals, .Qlinks, .socialicons {
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 1rem; 
+    }
+
+    .calendly2 {
+        width: 100%; 
+        margin-top: 1rem; 
+    }
+
+    .socialicons ul {
+        justify-content: center; 
+        font-size: 1.5rem; 
+    }
+
+    .Qlinks li {
+        font-size: 0.9rem; 
+    }
+}
+
+  
   </style>
 </head>
 
 <body>
+  
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XMGZ9R7"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -82,9 +273,12 @@
         <div class="col-lg-4 col-sm-3">
           <div class="social-icons">
             <ul>
-              <li><a href="https://www.instagram.com/taseer.uae"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.instagram.com/taseer.app"><i class="fab fa-instagram"></i></a></li>
               <li><a href="https://www.linkedin.com/company/ta-seer/"><i class="fab fa-linkedin"></i></a></li>
               <li><a href="https://medium.com/@taseeruae"><i class="fab fa-medium"></i></a></li>
+              <li><a href="https://www.facebook.com/share/4PjmQnUt2UveNf64/"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="https://www.tiktok.com/@taseer727"><i class="bi bi-tiktok"></i></a></li>
+              
             </ul>
           </div>
         </div>
@@ -139,12 +333,73 @@
       </div>
     </div>
   </div>
-
+<!-- WAITLIST -->
   <div id="waitlist" class="waitlist-container container mt-5">
     <h1 class="waitlist-heading">Join the waitlist for our app</h1>
 
-    <div class="timer" id="timer">
-      50 days Remaining
+    <div class="timer">
+      <div class="launch"><h1>Launching Soon</h1></div>
+      <div id="timer">
+          
+            <div>
+
+            <p id="days">00</p>
+            <span class="label">Days</span>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div><p id="hours">00</p>
+            <span class="label">Hours</span></div>
+
+            <div class="colon">:</div>
+
+            <div><p id="minutes">00</p>
+            <span class="label">Minutes</span></div>
+
+            <div class="colon">:</div>
+
+            <div><p id="seconds">00</p>
+            <span class="label">Seconds</span>
+          
+          
+          </div>
+      </div>
+
+      <script>
+        
+        var countDownDate = new Date("11 Nov, 2024 00:00:00").getTime();
+
+        
+        var countdownFunction = setInterval(function() {
+
+          
+          var now = new Date().getTime();
+
+          
+          var distance = countDownDate - now;
+
+          
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          
+          document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
+
+         
+          if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("countdown").innerHTML = "DOWNLOAD NOW";
+          }
+        }, 1000);
+    </script>
+  
+    
     </div>
 
     <form class="waitlist-form mt-5" action="https://formsubmit.co/taseeruae@gmail.com" method="POST">
@@ -218,7 +473,7 @@
       </div>
     </div>
   </div>
-
+<!-- INFLUENCERS -->
   <div class="infos section influencooo" id="infos-influencers">
     <div class="container">
       <div class="row">
@@ -248,7 +503,7 @@
                       style.</li>
                     <li><span class="boll">Support & Guidance:</span> Our team is here to assist you every step of the
                       way, from contract negotiations to creative strategy.</li>
-                    <li><span class="boll">Join now by filling application here: </span> <a href="https://forms.gle/u5cNJbw5Pp4b9XmJ6">Join Now</a></li>
+                    <li><span class="boll">Join now by filling application here:</span><div class="second-button"><a href="https://forms.gle/u5cNJbw5Pp4b9XmJ6">Join Now</a></div> </li>
                   </ul>
                   </p>
 
@@ -260,7 +515,7 @@
       </div>
     </div>
   </div>
-
+<!-- BRANDS -->
   <div class="infos section" id="infos-brands">
     <div class="container">
       <div class="row">
@@ -299,6 +554,14 @@
                       marketing budgets.</li>
                   </ul>
                   </p>
+                  <br>
+
+                  <div>
+
+                  <button class="calendly"><a href="https://calendly.com/taseeruae/30min">Book a Meeting with Us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg></a></button>
+                  </div>
 
                 </div>
               </div>
@@ -308,6 +571,7 @@
       </div>
     </div>
   </div>
+  <!-- BLOGS -->
   <div class="projects section" id="projects">
     <div class="container">
       <div class="row">
@@ -371,7 +635,7 @@
     </div>
   </div>
 
-  
+  <!-- CONTACT -->
   <div class="contact-us section" id="contact">
     <div class="container">
       <div class="row">
@@ -414,7 +678,13 @@
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on">
+                        
+                        <select id="subject" name="subject" placeholder="Subject" class="subbutton">
+                          <option value="subject" id="subject">Subject...</option>
+                          <option value="brand">Brand</option>
+                        <option value="influencer">Influencer</option>
+                        <option value="influencer">Others</option>
+                        </select>
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
@@ -434,7 +704,7 @@
                     <div class="col-lg-3">
                       <div class="info-item">
                         <i class="fa-brands fa-instagram"></i>
-                        <h4><a href="https://www.instagram.com/taseer.uae">taseer.uae</a></h4>
+                        <h4><a href="https://www.instagram.com/taseer.app">taseer.app</a></h4>
                       </div>
                     </div>
                     <div class="col-lg-3">
@@ -455,6 +725,8 @@
                         <i class="fa-brands fa-linkedin"></i>
                         <h4><a href="https://www.linkedin.com/company/ta-seer/">Ta'seer On LinkedIn</a></h4>
                       </div>
+
+                      
                     </div>
                   </div>
                 </div>
@@ -466,9 +738,68 @@
     </div>
   </div>
 
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <div class="col-lg-12">
+    <div class="footcontainer">
+     
+
+        <div class="Legals">
+        
+        <div class="img">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="" style="max-width: 112px;">
+          </a>
+          </div>
+
+          <a href="https://calendly.com/taseeruae/30min">
+
+          <button class="calendly2">Book a Meeting with Us<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg></button></a>
+
+          
+            <div>Contact Us: <a href="mailto:support@taseer.app"><i class="fa fa-envelope"></i>support@taseer.app</a> </div>
+          <br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+            <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
+          </svg>taseer 2024
+          <span class="policies"><u><a href="http://taseer.app/privacy">Terms and Conditions</a></u></span>
+          <span class="policies"><u><a href="http://taseer.app/privacy">Privacy</a></u></span>
+          
+        
+
+        
+        </div>
+
+        <div class="Qlinks">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+            <li class="scroll-to-section"><a href="#waitlist">Waitlist</a></li>
+            <li class="scroll-to-section"><a href="#infos-influencers">Influencers</a></li>
+            <li class="scroll-to-section"><a href="#infos-brands">Brands</a></li>
+            <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+          </ul>
+
+        </div>
+
+        
+
+        <div class="socialicons">
+
+          <h3>Connect with Us</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/taseer.app"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/ta-seer/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://medium.com/@taseeruae"><i class="fab fa-medium"></i></a></li>
+            <li><a href="https://www.facebook.com/share/4PjmQnUt2UveNf64/"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.tiktok.com/@taseer727"><i class="bi bi-tiktok"></i></a></li>
+          </ul>
+
+        </div>
+
+      
       </div>
     </div>
   </footer>
@@ -484,6 +815,7 @@
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  
 
 
 </body>
