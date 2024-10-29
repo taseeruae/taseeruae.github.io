@@ -2,7 +2,11 @@
 <html lang="en">
 
 <head>
+
+<!-- Google Tag Manager -->
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQTTX0J2H"></script>
@@ -13,6 +17,9 @@
 
   gtag('config', 'G-JHQTTX0J2H');
 </script>
+
+  <!-- End Google Tag Manager -->
+
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -37,7 +44,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   
   <style>
-    
+   /*CSS TO NEXT*/
 
     .waitlist-heading {
       text-align: center;
@@ -73,6 +80,10 @@
 
     }
 
+    .second-button{
+      margin-top:10px;
+    }
+
     #subject{
       color:#343334;
       font-weight: 600;
@@ -96,7 +107,7 @@
       justify-content: center; 
       align-items: center;     
       gap: 1rem;  
-      margin-top:4rem;             
+      margin-top:3rem;             
   }
   
   #timer div {
@@ -181,35 +192,16 @@
 
   }
 
-  .socialicons ul{
-    display:flex;
-    font-size: 2rem;
-    
-  }
-
-  .socialicons{
-    margin-top: 20px;
-    
-    
-  }
-
-  .socialicons li{
-    transition:0.3s ease-in-out;
-    opacity:0.85
-
-  }
-
-  .socialicons li:hover{
-    transform:scale(1.2);
-    opacity: 1;
-
-  }
 
   .Qlinks li{
     font-weight: 500;
     margin-top:10px;
     font-size:1rem;
 
+  }
+
+  .Qlinks li:hover{
+    text-decoration: underline;
   }
 
   @media (max-width: 768px) {
@@ -238,17 +230,95 @@
         font-size: 0.9rem; 
     }
 }
+.nav {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to arrange items horizontally */
+  align-items: center; /* Center align items vertically */
+  position: relative; /* Set position relative for absolute positioning */
+}
 
+.scroll-to-section {
+  margin-right: 20px; /* Space between navigation items */
+}
+
+.join-button {
+  padding: 8px;
+  height: 50px;
+  width: 150px;
+  color: rgb(128, 0, 255); /* Text color */
+  background-color: #ffffff; /* White button color */
+  border: none;
+  border-radius: 50px;
+  margin-top: 0; /* Adjust margin to align with nav items */
+  animation: blink 1.5s infinite; /* Blink animation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), /* Light shadow for depth */
+              0 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow */
   
+}
+
+.join-button a {
+  text-decoration: none; /* Remove underline from link */
+  color: rgb(128, 0, 255); /* Match text color to button text */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(122, 59, 147, 0.6), 
+                0 0 20px rgba(176, 67, 209, 0.6),
+                0 0 30px rgba(170, 0, 255, 0.6);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 20px rgba(234, 106, 232, 0.6), 
+                0 0 30px rgba(176, 67, 209, 0.6),
+                0 0 40px rgba(255, 0, 208, 0.6);
+  }
+}
+
+.item img{
+  height:250px;
+  width:500px;}
+
+
+
+.join-button {
+  display: inline-block; 
+}
+
+#join-link {
+  display: none; 
+}
+
+
+@media (max-width: 800px) {
+  .join-button {
+    display: none; 
+  }
+
+  #join-link {
+    display: block; 
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  #join-link a {
+    text-decoration: none;
+    color: #000; 
+  }
+}
+
+
+
   </style>
 </head>
 
 <body>
   
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XMGZ9R7"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -270,19 +340,19 @@
         <div class="col-lg-8 col-sm-9">
           <div class="left-info">
             <ul>
-              <li><a href="mailto:support@taseer.app"><i class="fa fa-envelope"></i>support@taseer.app</a></li>
+              <li><a href="mailto:support@taseer.app" target="_blank"><i class="fa fa-envelope"></i>support@taseer.app</a></li>
             </ul>
           </div>
         </div>
         <div class="col-lg-4 col-sm-3">
           <div class="social-icons">
             <ul>
-              <li><a href="https://www.instagram.com/taseer.app"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/ta-seer/"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://medium.com/@taseeruae"><i class="fab fa-medium"></i></a></li>
-              <li><a href="https://www.facebook.com/share/4PjmQnUt2UveNf64/"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="https://www.tiktok.com/@taseer727"><i class="bi bi-tiktok"></i></a></li>
-              
+              <li><a href="https://www.instagram.com/taseer.app" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/ta-seer/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://medium.com/@taseeruae" target="_blank"><i class="fab fa-medium"></i></a></li>
+              <li><a href="https://www.facebook.com/share/4PjmQnUt2UveNf64/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="https://www.tiktok.com/@taseer727" target="_blank"><i class="bi bi-tiktok"></i></a></li>
+              <li><a href=https://www.youtube.com/channel/UCZqNy4u25KYdB90gA0WG0VA target="_blank"><i class="bi bi-youtube"></i></a></li>
             </ul>
           </div>
         </div>
@@ -305,10 +375,15 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#waitlist">Waitlist</a></li>
+              
               <li class="scroll-to-section"><a href="#infos-influencers">Influencers</a></li>
               <li class="scroll-to-section"><a href="#infos-brands">Brands</a></li>
               <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+              <button class="join-button"><a href="#waitlist" id="join-btn">Join Waitlist</a></button>
+              <li class="scroll-to-section"><a href="#waitlist" id="join-link">Join Waitlist</a></li>
+              
+            
+
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -318,6 +393,8 @@
         </div>
       </div>
     </div>
+    
+
   </header>
   <!-- ***** Header Area End ***** -->
 
@@ -328,7 +405,7 @@
           <div class="caption header-text">
             <h6>#Everything Influencers</h6>
             <div class="line-dec"></div>
-            <h4> Platform that</br> <em>Connects</em> </br> Influencers and<span>Brands</span> Together</h4>
+            <h4> Platform that</br> <em>Connects</em> </br> Influencers and <br><span>Brands</span> Together</h4>
             <p>We are a Dubai-based company dedicated to connecting talented influencers and leading brands worldwide.
             </p>
             <div class="second-button"><a href="#contact">Contact Us</a></div>
@@ -437,7 +514,7 @@
                   <img src="assets/images/services-01.jpg" alt="discover SEO" class="templatemo-feature">
                 </div>
                 <h4>Brand Partnerships</h4>
-                <p>We connect influencers with brands that align with their personal brand and values.</p>
+                <p>We connect influencers with brands that align with their personal brand and values.<br><br></p>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -477,6 +554,7 @@
       </div>
     </div>
   </div>
+
 <!-- INFLUENCERS -->
   <div class="infos section influencooo" id="infos-influencers">
     <div class="container">
@@ -507,7 +585,8 @@
                       style.</li>
                     <li><span class="boll">Support & Guidance:</span> Our team is here to assist you every step of the
                       way, from contract negotiations to creative strategy.</li>
-                    <li><span class="boll">Join now by filling application here:</span><div class="second-button"><a href="https://forms.gle/u5cNJbw5Pp4b9XmJ6">Join Now</a></div> </li>
+                    <li><span class="boll">Join now by filling application here:</span>
+                      <div class="second-button"><a href="https://forms.zohopublic.com/supporttas1/form/InfluencerConnect/formperma/tl_gOHU9gwESVc_Ur1-KVxazd9ID10xPkZBaPr7BsF0" target="_blank">Join Now</a></div> </li>
                   </ul>
                   </p>
 
@@ -519,6 +598,8 @@
       </div>
     </div>
   </div>
+
+
 <!-- BRANDS -->
   <div class="infos section" id="infos-brands">
     <div class="container">
@@ -562,7 +643,7 @@
 
                   <div>
 
-                  <button class="calendly"><a href="https://calendly.com/taseeruae/30min">Book a Meeting with Us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <button class="calendly"><a href="https://calendly.com/taseeruae/30min" target="_blank">Book a Meeting with Us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                   </svg></a></button>
                   </div>
@@ -575,13 +656,15 @@
       </div>
     </div>
   </div>
-  <!-- BLOGS -->
+
+
+  <!-- BLOGS --> 
   <div class="projects section" id="projects">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h2>Read Our <em>Blogs</em> On <span>Medium</span></h2>
+            <h2>Read Our <em>Blogs</em> 
             <div class="line-dec"></div>
           </div>
         </div>
@@ -592,45 +675,45 @@
         <div class="col-lg-12">
           <div class="owl-features owl-carousel">
             <div class="item">
-              <img src="assets/images/projj.jpeg" alt="">
+              <img src="https://images.pexels.com/photos/5716032/pexels-photo-5716032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
               <div class="down-content">
                 <h4>Unpacking 2024's Biggest Influencer Marketing Trends: How Brands Are Winning Big!</h4>
-                <a href="https://medium.com/@taseeruae/unpacking-2024s-biggest-influencer-marketing-trends-how-brands-are-winning-big-7d50010ef7ce"><i class="fa fa-link"></i></a>
+                <a href="https://medium.com/@taseeruae/unpacking-2024s-biggest-influencer-marketing-trends-how-brands-are-winning-big-7d50010ef7ce" target="_blank"><i class="fa fa-link"></i></a>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/projj.jpeg" alt="">
+              <img src="https://images.pexels.com/photos/8117815/pexels-photo-8117815.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
               <div class="down-content">
                 <h4>The Future of Influencer Marketing: 5 Trends That Will Explode in 2024!</h4>
-                <a href="https://medium.com/@taseeruae/the-future-of-influencer-marketing-5-trends-that-will-explode-in-2024-6e4eef57bf67"><i class="fa fa-link"></i></a>
+                <a href="https://medium.com/@taseeruae/the-future-of-influencer-marketing-5-trends-that-will-explode-in-2024-6e4eef57bf67" target="_blank"><i class="fa fa-link"></i></a>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/projj.jpeg" alt="">
+              <img src="https://media.istockphoto.com/id/1149096534/photo/healthy-eating.jpg?b=1&s=612x612&w=0&k=20&c=JVzitM-H-CYxsQ-u4dvxz5ikAYfBpeo8fTvaAqHRiQo=" alt="">
               <div class="down-content">
                 <h4>How HelloFresh Turned Meal Kits into a Trend!</h4>
-                <a href="https://medium.com/@taseeruae/how-hellofresh-turned-meal-kits-into-a-trend-76015ddab60a"><i class="fa fa-link"></i></a>
+                <a href="https://medium.com/@taseeruae/how-hellofresh-turned-meal-kits-into-a-trend-76015ddab60a" target="_blank"><i class="fa fa-link"></i></a>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/projj.jpeg" alt="">
+              <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*jFUR9LDRdgAhbWwp_dJJRQ.png" alt="">
               <div class="down-content">
                 <h4>Here's how GoPro used User-Generated content for Marketing</h4>
-                <a href="https://medium.com/@taseeruae/heres-how-gopro-used-user-generated-content-for-marketing-95f017fc53d0"><i class="fa fa-link"></i></a>
+                <a href="https://medium.com/@taseeruae/heres-how-gopro-used-user-generated-content-for-marketing-95f017fc53d0" target="_blank"><i class="fa fa-link"></i></a>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/projj.jpeg" alt="">
+              <img src=https://miro.medium.com/v2/resize:fit:720/format:webp/1*LoPpRkZvBTo-_7khc8Jn_g.png alt="">
               <div class="down-content">
                 <h4>Micro-Influencers vs. Nano-Influencers: What's the Difference? </h4>
-                <a href="https://medium.com/@taseeruae/micro-influencers-vs-nano-influencers-whats-the-difference-a482265528ae"><i class="fa fa-link"></i></a>
+                <a href="https://medium.com/@taseeruae/micro-influencers-vs-nano-influencers-whats-the-difference-a482265528ae" target="_blank"><i class="fa fa-link"></i></a>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/projj.jpeg" alt="">
+              <img src=https://miro.medium.com/v2/resize:fit:720/format:webp/1*GWwnu7tGV6wl-eYTb0qmYQ.png alt="">
               <div class="down-content">
                 <h4>Gymshark's 66 Day Challenge: A Case Study</h4>
-                <a href="https://medium.com/@taseeruae/gymsharks-66-day-challenge-a-case-study-9fe74708b2cb"><i class="fa fa-link"></i></a>
+                <a href="https://medium.com/@taseeruae/gymsharks-66-day-challenge-a-case-study-9fe74708b2cb" target="_blank"><i class="fa fa-link"></i></a>
               </div>
             </div>
           </div>
@@ -638,6 +721,8 @@
       </div>
     </div>
   </div>
+
+  
 
   <!-- CONTACT -->
   <div class="contact-us section" id="contact">
@@ -689,7 +774,7 @@
                         <option value="influencer">Influencer</option>
                         <option value="influencer">Others</option>
                         </select>
-                      </fieldset>
+                      </fieldset><br>
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
@@ -708,27 +793,29 @@
                     <div class="col-lg-3">
                       <div class="info-item">
                         <i class="fa-brands fa-instagram"></i>
-                        <h4><a href="https://www.instagram.com/taseer.app">taseer.app</a></h4>
+                        <h4><a href="https://www.instagram.com/taseer.app" target="_blank">taseer.app</a></h4>
                       </div>
                     </div>
                     <div class="col-lg-3">
                       <div class="info-item">
                         <i class="fa fa-envelope"></i>
-                        <h4><a href="mailto:support@taseer.app">support@taseer.app</a></h4>
+                        <h4><a href="mailto:support@taseer.app" target="_blank">support@taseer.app</a></h4>
                       </div>
                     </div>
                     <div class="col-lg-3">
                       <div class="info-item">
                         <i class="fa-brands fa-medium"></i>
-                        <h4><a href="https://medium.com/@taseeruae">@taseeruae</a></h4>
+                        <h4><a href="https://medium.com/@taseeruae" target="_blank">@taseeruae</a></h4>
                       </div>
                     </div>
 
                     <div class="col-lg-3">
                       <div class="info-item">
                         <i class="fa-brands fa-linkedin"></i>
-                        <h4><a href="https://www.linkedin.com/company/ta-seer/">Ta'seer On LinkedIn</a></h4>
+                        <h4><a href="https://www.linkedin.com/company/ta-seer/" target="_blank">Ta'seer On LinkedIn</a></h4>
                       </div>
+
+                     
 
                       
                     </div>
@@ -755,20 +842,20 @@
           </a>
           </div>
 
-          <a href="https://calendly.com/taseeruae/30min">
+          <a href="https://calendly.com/taseeruae/30min" target="_blank">
 
           <button class="calendly2">Book a Meeting with Us<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
           </svg></button></a>
 
           
-            <div>Contact Us: <a href="mailto:support@taseer.app"><i class="fa fa-envelope"></i>support@taseer.app</a> </div>
+            <div>Contact Us: <a href="mailto:support@taseer.app" target="_blank"><i class="fa fa-envelope"></i>support@taseer.app</a> </div>
           <br>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
             <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
           </svg>taseer 2024
-          <span class="policies"><u><a href="http://taseer.app/privacy">Terms and Conditions</a></u></span>
-          <span class="policies"><u><a href="http://taseer.app/privacy">Privacy</a></u></span>
+          <span class="policies"><u><a href="http://taseer.app/privacy" target="_blank">Terms and Conditions</a></u></span>
+          <span class="policies"><u><a href="http://taseer.app/privacy" target="_blank">Privacy</a></u></span>
           
         
 
@@ -790,15 +877,16 @@
 
         
 
-        <div class="socialicons">
+        <div class="Qlinks">
 
           <h3>Connect with Us</h3>
           <ul>
-            <li><a href="https://www.instagram.com/taseer.app"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/ta-seer/"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://medium.com/@taseeruae"><i class="fab fa-medium"></i></a></li>
-            <li><a href="https://www.facebook.com/share/4PjmQnUt2UveNf64/"><i class="bi bi-facebook"></i></a></li>
-            <li><a href="https://www.tiktok.com/@taseer727"><i class="bi bi-tiktok"></i></a></li>
+            <li><a href="https://www.instagram.com/taseer.app" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/ta-seer/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://medium.com/@taseeruae" target="_blank">Medium</a></li>
+            <li><a href="https://www.facebook.com/share/4PjmQnUt2UveNf64/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@taseer727" target="_blank">TikTok</a></li>
+            <li><a href=https://www.youtube.com/channel/UCZqNy4u25KYdB90gA0WG0VA target="_blank">Youtube</i></a></li>
           </ul>
 
         </div>
@@ -820,6 +908,7 @@
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   
+
 
 
 </body>
