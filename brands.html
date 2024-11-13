@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Google Tag Manager -->
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQTTX0J2H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JHQTTX0J2H');
+</script>
+
+  <!-- End Google Tag Manager -->
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <title>Ta'seer, Connecting Brands & Influencers</title>
+
+  <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-tale-seo-agency.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  
+  <style>
+   /*CSS TO NEXT*/
+   h1 {
+    font-size: 5em;
+    color: #8e00ff; /* Purple Text Color */
+    margin-bottom: 0.3em;
+    opacity: 0;
+    animation: zoomIn 10s ease-in-out infinite alternate, textFadeIn 3s ease-in-out forwards;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  @keyframes textFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  /* Initial styles */
+  /* Initial styles for the line */
+.line-dec {
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 2s ease-out;
+  animation: lineAnimation 2s forwards;
+}
+
+/* Styling for the text */
+#st{
+  font-size: 36px;
+  font-weight: bold;
+  color: #dd00ff;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  border-right: 3px solid #fefefe;
+  animation: typewriter 2s steps(20) 1s forwards, cursorBlink 0.8s steps(1) infinite 2s;
+}
+
+/* Animation for typing effect */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Animation for cursor blinking */
+@keyframes cursorBlink {
+  50% {
+    border-right: 3px solid transparent;
+  }
+  100% {
+    border-right: 3px solid #f9f9f9;
+  }
+}
+
+/* Animation for line elongation */
+@keyframes lineAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* After typing, hide the cursor */
+#st.completed {
+  border-right: none;
+}
+
+</style>
+</head>
+  
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const stayTunedText = document.getElementById('st');
+    const line = document.getElementById('line');
+    
+    // Text for the typing animation
+    const text = "Stay Tuned!";
+    let index = 0;
+  
+    // Function for typing effect
+    function typeText() {
+      if (index < text.length) {
+        stayTunedText.innerHTML += text[index];
+        index++;
+        setTimeout(typeText, 200); // Typing delay
+      } else {
+        // Remove the cursor after typing is done
+        stayTunedText.classList.add('completed');
+      }
+    }
+  
+    // Start typing effect
+    typeText();
+  });
+  
+ </script>
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="caption header-text">
+            <h2 id="st"></h2>
+            <div class="line-dec"></div>
+            <h1> Coming Soon </h1>
+           
+            
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+   
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  
+
+
+
+</body>
+
+</html>

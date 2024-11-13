@@ -252,7 +252,7 @@
   border: none;
   border-radius: 50px;
   margin-top: 0; /* Adjust margin to align with nav items */
-  animation: blink 1.5s infinite; /* Blink animation */
+  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), /* Light shadow for depth */
               0 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow */
   
@@ -263,20 +263,7 @@
   color: rgb(128, 0, 255); /* Match text color to button text */
 }
 
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-    box-shadow: 0 0 10px rgba(122, 59, 147, 0.6), 
-                0 0 20px rgba(176, 67, 209, 0.6),
-                0 0 30px rgba(170, 0, 255, 0.6);
-  }
-  50% {
-    opacity: 0.8;
-    box-shadow: 0 0 20px rgba(234, 106, 232, 0.6), 
-                0 0 30px rgba(176, 67, 209, 0.6),
-                0 0 40px rgba(255, 0, 208, 0.6);
-  }
-}
+
 
 .item img{
   height:250px;
@@ -311,8 +298,64 @@
   }
 }
 
+#waitlist {
+  background: linear-gradient(to right, #7200e0, #f700ff); /* Matching gradient background */
+  padding: 60px 20px; /* Extra padding for height */
+  
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  min-height: 300px; /* Added minimum height */
+  position: relative;
+  bottom:50px;
+}
 
+/* Headings */
+.waitlist-heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
+.launch h1 {
+  font-size: 3em;
+  margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+/* Buttons */
+.inf, .bran {
+  background-color: #ffffff; /* White background */
+  color: #ff00fb; /* Pink text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 10px; /* Space between buttons */
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.inf a, .bran a {
+  color: #ff00ff; /* Pink text */
+  text-decoration: none;
+}
+
+.inf:hover, .bran:hover {
+  background-color: #f0f0f0; /* Slightly gray background on hover */
+}
+
+/* Flex alignment for buttons */
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between "Get Started" and button container */
+}
+
+@media (min-width: 768px) {
+  .timer div {
+    display: flex;
+    gap: 20px; /* Space between buttons on larger screens */
+  }
+}
   </style>
 </head>
 
@@ -379,7 +422,7 @@
               <li class=""><a href="#influencers">Influencers</a></li>
               <li class=""><a href="#brands">Brands</a></li>
               <li class="scroll-to-section"><a href="#contact">Contact</a></li>
-              <button class="join-button"><a href="#waitlist" id="join-btn">Join Waitlist</a></button>
+              <button class="join-button"><a href="#waitlist" id="join-btn">Get Started</a></button>
               <li class="scroll-to-section"><a href="#waitlist" id="join-link">Join Waitlist</a></li>
               
             
@@ -416,79 +459,18 @@
   </div>
 <!-- WAITLIST -->
   <div id="waitlist" class="waitlist-container container mt-5">
-    <h1 class="waitlist-heading">Join the waitlist for our app</h1>
+    <h1 class="waitlist-heading">Join Our App</h1>
 
     <div class="timer">
-      <div class="launch"><h1>Launching Soon</h1></div>
-      <div id="timer">
-          
-            <div>
-
-            <p id="days">00</p>
-            <span class="label">Days</span>
-            </div>
-
-            <div class="colon">:</div>
-
-            <div><p id="hours">00</p>
-            <span class="label">Hours</span></div>
-
-            <div class="colon">:</div>
-
-            <div><p id="minutes">00</p>
-            <span class="label">Minutes</span></div>
-
-            <div class="colon">:</div>
-
-            <div><p id="seconds">00</p>
-            <span class="label">Seconds</span>
-          
-          
-          </div>
-      </div>
-
-      <script>
-        
-        var countDownDate = new Date("11 Nov, 2024 00:00:00").getTime();
-
-        
-        var countdownFunction = setInterval(function() {
-
-          
-          var now = new Date().getTime();
-
-          
-          var distance = countDownDate - now;
-
-          
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          
-          document.getElementById("days").innerHTML = days;
-          document.getElementById("hours").innerHTML = hours;
-          document.getElementById("minutes").innerHTML = minutes;
-          document.getElementById("seconds").innerHTML = seconds;
-
-         
-          if (distance < 0) {
-            clearInterval(countdownFunction);
-            document.getElementById("countdown").innerHTML = "DOWNLOAD NOW";
-          }
-        }, 1000);
-    </script>
+      <div class="launch"><h1>Get Started</h1></div>
+      <div>
+      <button class="inf"><a href="#" target="_blank">I'm an Influencer</a></button>
+      <button class="bran"><a href="brands.html" target="_blank">I'm a Brand</a></button>
+    </div>
   
     
     </div>
-
-    <form class="waitlist-form mt-5" action="https://formsubmit.co/taseeruae@gmail.com" method="POST">
-      <div class="mb-3">
-        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-      </div>
-      <button type="submit" class="joinwbutton btn btn-primary w-100">Join Waitlist</button>
-    </form>
+    
   </div>
   </div>
 
