@@ -356,6 +356,48 @@
     gap: 20px; /* Space between buttons on larger screens */
   }
 }
+/* Style for the paragraph text */
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Style for the radio button group container */
+.radio-group {
+  margin: 10px 0;
+  
+  padding-left: 20px;
+}
+
+/* Style for each radio button label */
+.radio-group label {
+  display: inline-flex; /* Align label and input inline */
+  align-items: center; /* Center-align label with radio button */
+  font-size: 14px;
+  
+  cursor: pointer;
+  margin-right: 15px; /* Ensure proper spacing between buttons */
+}
+
+/* Style for the radio buttons */
+.radio-group input[type="radio"] {
+  width: 20px; /* Set width */
+  height: 20px; /* Set height */
+  margin-right: 8px; /* Add spacing between the button and the label text */
+  accent-color: #fc00fc; /* Change the color of the radio button */
+  vertical-align: middle; /* Align properly with text */
+}
+
+/* Style when hovering over the label */
+.radio-group label:hover {
+  color: #811cd3;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+
   </style>
 </head>
 
@@ -568,7 +610,7 @@
                     <li><span class="boll">Support & Guidance:</span> Our team is here to assist you every step of the
                       way, from contract negotiations to creative strategy.</li>
                     <li><span class="boll">Join now by filling application here:</span>
-                      <div class="second-button"><a href="https://forms.zohopublic.com/supporttas1/form/InfluencerConnect/formperma/tl_gOHU9gwESVc_Ur1-KVxazd9ID10xPkZBaPr7BsF0" target="_blank">Join Now</a></div> </li>
+                      <div class="second-button"><a href="test.html" target="_blank">Join Now</a></div> </li>
                   </ul>
                   </p>
 
@@ -750,12 +792,26 @@
                     <div class="col-lg-6">
                       <fieldset>
                         
-                        <select id="subject" name="subject" placeholder="Subject" class="subbutton">
-                          <option value="subject" id="subject">Subject...</option>
-                          <option value="brand">Brand</option>
-                        <option value="influencer">Influencer</option>
-                        <option value="influencer">Others</option>
-                        </select>
+                        <div class="radio-group">
+                          <p>Subject:</p>
+                          <label for="brand">
+                            <input type="radio" id="brand" name="subject" value="brand">
+                            Brand
+                          </label>
+                          <label for="influencer">
+                            <input type="radio" id="influencer" name="subject" value="influencer">
+                            Influencer
+                          </label>
+                          <label for="others">
+                            <input type="radio" id="others" name="subject" value="others">
+                            Others
+                          </label>
+                        </div>
+                      </fieldset>
+                    </div>
+                    
+                        
+
                       </fieldset><br>
                     </div>
                     <div class="col-lg-12">
