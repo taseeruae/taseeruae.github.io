@@ -793,21 +793,12 @@ p {
                     <div class="col-lg-6">
                       <fieldset>
                         
-                        <div class="radio-group">
-                          <p>Subject:</p>
-                          <label for="brand">
-                            <input type="radio" id="brand" name="subject" value="brand">
-                            Brand
-                          </label>
-                          <label for="influencer">
-                            <input type="radio" id="influencer" name="subject" value="influencer">
-                            Influencer
-                          </label>
-                          <label for="others">
-                            <input type="radio" id="others" name="subject" value="others">
-                            Others
-                          </label>
-                        </div>
+                        <select id="subject" name="subject" placeholder="Subject" class="subbutton">
+                          <option value="subject" id="subject">You are...</option>
+                          <option value="brand">Brand</option>
+                        <option value="influencer">Influencer</option>
+                        <option value="influencer">Others</option>
+                        </select>
                       </fieldset>
                     </div>
                     
