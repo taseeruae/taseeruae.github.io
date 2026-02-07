@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #8700f5a2, #e450f5aa);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .container {
+            height:auto;
+            margin-top:10px;
+            width: 800px;
+            background: #f2f0f3;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #6a0dad;
+            margin-bottom: 20px;
+        }
+
+        label {
+            
+            font-size: 14px;
+            color: #6a0dad;
+            margin-bottom: 8px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+       
+
+        input, select, textarea {
+            width: 95%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            background: #f0f8ff;
+            outline: none;
+        }
+
+        .phone-input-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            background: #f0f8ff;
+            overflow: hidden;
+        }
+
+        .phone-input-container select {
+            border: none;
+            background: none;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            outline: none;
+            appearance: none;
+            cursor: pointer;
+            width: 90px;
+        }
+
+        .phone-input-container input {
+            border: none;
+            background: none;
+            padding: 10px;
+            flex: 1;
+            font-size: 16px;
+            color: #333;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(90deg, #8700f5, #ff00b3);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #551a8b;
+        }
+
+        .hidden {
+            display: none;
+        }
+        .checkbox-container {
+            display: flex;
+            
+            align-items: center;
+            gap:0;
+            
+            color: #6a0dad;
+        }
+     
+       
+        #tc{ color:rgb(200, 59, 193)
+
+        }
+
+        .collab{
+            color:#6a0dad ;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin: 0;  /* Remove margin around the checkbox */
+            padding: 0; /* Remove padding around the checkbox */
+        }
+        
+        .checkbox-container label {
+            margin: 0;  /* Remove margin from the label */
+            padding: 0; /* Remove padding from the label */
+        }
+        
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Influencer Connect</h1>
+    <form id="contact-form" action="https://formsubmit.co/taseeruae@gmail.com" method="POST" target="_blank">
+        <!-- Name -->
+        <div class="input-container">
+            <label for="name">First Name </label>
+            <input type="text" id="name" placeholder="Enter first name" required>
+        </div><br>
+ 
+           
+                <!-- Name -->
+                <div class="input-container">
+                    <label for="name">Last Name</label>
+                    <input type="text" id="name" placeholder="Enter last name" required>
+                </div><br>
+ <!-- email-->
+                <div class="input-container">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div><br>
+    
+            <!-- Mobile Number -->
+            <div class="input-container">
+                <label for="mobile-number">Mobile Number</label>
+                <div class="phone-input-container">
+                    <select id="mobile-country-code">
+                        <option value="+971" selected>🇦🇪 +971</option>
+                    </select>
+                    <input type="tel" id="mobile-number" placeholder="Enter your mobile number" required>
+                </div>
+            </div><br>
+
+            <!-- WhatsApp Number -->
+            <div class="input-container">
+                <label for="whatsapp-number">WhatsApp Number</label>
+                <div class="phone-input-container">
+                    <select id="whatsapp-country-code">
+                        <option value="+971" selected>🇦🇪 +971</option>
+                    </select>
+                    <input type="tel" id="whatsapp-number" placeholder="Enter your WhatsApp number" required>
+                </div>
+            </div>
+            <br>
+            <!-- Most Used Social Media Platform -->
+            <div class="input-container">
+                <label for="social-media">Most Used Social Media Platform</label>
+                <select id="social-media">
+                    <option value="Instagram">Instagram</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <br>
+            <!-- Other Social Media Platform -->
+            <div class="input-container hidden" id="other-platform-container">
+                <label for="other-platform">Specify Other Platform</label>
+                <input type="text" id="other-platform" placeholder="Enter the platform name">
+            </div>
+            <br>
+            <!-- URL of Social Media -->
+            <div class="input-container">
+                <label for="platform-url">URL to your Social Media Platform</label>
+                <input type="url" id="platform-url" placeholder="Enter the URL">
+            </div>
+            <br>
+            <!-- Number of Followers -->
+            <div class="input-container">
+                <label for="followers">How Many Followers Do You Have?</label>
+                <input type="number" id="followers" placeholder="Enter the number of followers">
+            </div>
+            <br>
+            <!-- Target Country -->
+            <div class="input-container">
+                <label for="target-country">Target Country for Collaborations</label>
+                <select id="target-country"></select>
+                
+            </div><br>
+            <span class="collab">You are Looking for:</span><br><br>
+            <div class="input-container checkbox-container">
+                
+                
+                <input type="checkbox" id="collab1">
+                <label for=collab1>Paid Collaborations Only</label>
+                <input type="checkbox" id="collab2">
+                <label for=collab2>Open to both paid and unpaid collaborations—focused on gaining experience and creating value through meaningful exchanges
+                </label>
+              </div>
+            <br><br>
+            <!-- Terms and Conditions -->
+            <span id="tc">By joining Ta'seer as an influencer, you agree to collaborate with us and allow the use of your name, content, and likeness in our marketing materials, both online and offline. This includes using your content on social media platforms, websites, and client presentations to showcase your work as part of our influencer portfolio. We respect your creative freedom, ensuring your content aligns with your personal style while fulfilling the objectives of our campaigns. Compensation and specific project details will be discussed and agreed upon prior to each collaboration.
+            </span><br><br>
+            <div class="input-container checkbox-container">
+                
+                
+              <input type="checkbox" id="terms" required>
+               <label for="terms">By accepting these terms, you acknowledge that you are accepting to be part of our growing influencer network. You agree that your content may be used to represent Ta'seer as your representative in a professional and positive light, and that you will be compensated fairly for your contributions. Both parties may terminate the agreement at any time, and we will continue to maintain a respectful, mutually beneficial relationship throughout our partnership.I accept the Terms and Conditions.</label>
+            </div>
+<br>
+            <!-- Submit Button -->
+            <div><button type="submit">Submit</button><br><br>
+        </form>
+        
+    </div>
+
+    <script>
+        // Dynamically load all countries and their codes
+        document.addEventListener("DOMContentLoaded", async () => {
+            const mobileCountryCodeDropdown = document.getElementById("mobile-country-code");
+            const whatsappCountryCodeDropdown = document.getElementById("whatsapp-country-code");
+            const targetCountryDropdown = document.getElementById("target-country");
+
+            try {
+                const response = await fetch("https://restcountries.com/v3.1/all");
+                const countries = await response.json();
+
+                // Sort countries alphabetically by name
+                countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
+
+                // Populate dropdown with country codes and names
+                countries.forEach((country) => {
+                    if (country.idd && country.idd.root) {
+                        const dialingCode =
+                            country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : "");
+                        const flagEmoji = country.flag || "🏳️";
+                        const countryOption = document.createElement("option");
+                        countryOption.value = dialingCode;
+                        countryOption.textContent = `${flagEmoji} ${country.name.common} (${dialingCode})`;
+
+                        mobileCountryCodeDropdown.appendChild(countryOption.cloneNode(true));
+                        whatsappCountryCodeDropdown.appendChild(countryOption.cloneNode(true));
+
+                        const targetCountryOption = document.createElement("option");
+                        targetCountryOption.value = country.name.common;
+                        targetCountryOption.textContent = country.name.common;
+                        targetCountryDropdown.appendChild(targetCountryOption);
+                    }
+                });
+            } catch (error) {
+                console.error("Error loading country data:", error);
+            }
+        });
+
+        // Show "Other" input if user selects "Other" from social media dropdown
+        document.getElementById("social-media").addEventListener("change", (e) => {
+            const otherPlatformContainer = document.getElementById("other-platform-container");
+            if (e.target.value === "Other") {
+                otherPlatformContainer.classList.remove("hidden");
+            } else {
+                otherPlatformContainer.classList.add("hidden");
+            }
+        });
+
+        
+    </script>
+</body>
+</html>
